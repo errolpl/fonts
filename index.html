@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Testing</title>
+    <link rel="stylesheet" href="" />
+    <style type="text/css" media="screen">
+      @font-face {
+        font-family: "Gotham Bold";
+        src: url("https://moonrabbitdev.com/proof/iveric/izervay/fonts/HCo_GothamSSm/Fonts/GothamSSm-Bold.woff")
+          format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      /* Webfont: Unique-Thin */
+      @font-face {
+        font-family: "UniqueThin";
+        src: url("https://moonrabbitdev.com/proof/iveric/izervay/fonts/Unique-Thin.woff2")
+            format("woff2"),
+          /* Modern Browsers */
+            url("https://moonrabbitdev.com/proof/iveric/izervay/fonts/Unique-Thin.otf")
+            format("opentype"); /* Safari, Android, iOS */
+        font-style: normal;
+        font-weight: normal;
+        text-rendering: optimizeLegibility;
+      }
+      @font-face {
+        font-family: "GothamBold";
+        src: url("./GothamSSm-Bold.woff") format("woff"),
+          /* Modern Browsers */ url("./GothamSSm-Bold.otf") format("opentype"); /* Safari, Android, iOS */
+        font-style: bold;
+        font-weight: 700;
+        text-rendering: optimizeLegibility;
+      }
+
+      .gotham {
+        font-family: "GothamBold", serif;
+      }
+
+      .unique {
+        font-family: "UniqueThin", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gotham">
+      <h1>Gotham</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, eligendi
+        perferendis placeat vel delectus facilis fugiat nulla quibusdam
+        dignissimos nemo doloribus deserunt eveniet, reprehenderit ex in rem
+        harum repellat quas.
+      </p>
+    </div>
+    <div class="unique">
+      <h1>Unique Thin</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, eligendi
+        perferendis placeat vel delectus facilis fugiat nulla quibusdam
+        dignissimos nemo doloribus deserunt eveniet, reprehenderit ex in rem
+        harum repellat quas.
+      </p>
+    </div>
+  </body>
+</html>
